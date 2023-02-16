@@ -1,0 +1,72 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Selby</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/selby-town-council-logo.webp">
+
+
+</head>
+
+<div class="loader" id="load">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<div class="places_nav">
+    <div class="nav_container_pages" onclick="burger(this)" id="burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+</div>
+
+<body>
+
+    <div class="news_content" id="content">
+        <div class="places_main_text">
+            <h1>Read up on the lastest news!</h1>
+            <p>Below you can find different twitter feeds, all relating to Selby.</p>
+        </div>
+
+        <div class="socialwall" id="wall">
+            <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank"
+                    class="crt-logo crt-tag">Powered by Curator.io</a></div>
+        </div>
+
+        <script type="text/javascript">
+            waiting = true;
+            window.setTimeout(function () {
+                (function () {
+                    var i, e, d = document,
+                        s = "script";
+                    i = d.createElement("script");
+                    i.async = 1;
+                    i.charset = "UTF-8";
+                    i.src = "https://cdn.curator.io/published/3ecf31f4-c76e-4d60-b5c1-137d4780b966.js";
+                    e = d.getElementsByTagName(s)[0];
+                    e.parentNode.insertBefore(i, e);
+                })();
+            }, 50)
+        </script>
+
+        <div class="button_container" id="button">
+            <a href="#">
+                <button class="news_button" role="button">Back To Start</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+</body>
+
+<script src="javascript/burger.js"></script>
+<script src="javascript/cursor.js"></script>
+<script src="javascript/newsload.js"></script>

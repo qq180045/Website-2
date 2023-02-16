@@ -1,0 +1,60 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Selby</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/selby-town-council-logo.webp">
+
+
+</head>
+
+<body>
+    <div class="intro_box" onclick="clickVanish()" id="vanish1">
+        <div class='console-container'><span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
+        </div>
+        <div class="bottom">
+            <h1>Click anywhere to continue...</h1>
+        </div>
+    </div>
+
+
+    <div class="loader" id="load">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <main id="unhide">
+        <nav>
+            <div class="main_logo">
+                <img src="images/selby-town-council-logo.webp" onmouseover="colorChange()" onmouseout="revert()">
+            </div>
+            <div class="nav_container" onclick="burger(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+
+        <div class="main_text">
+            <h1>Welcome to Selby!</h1>
+        </div>
+    </main>
+
+    <div class ="cursor"></div>
+    <div class ="cursor2"></div>
+
+</body>
+
+<script src="javascript/load.js"></script>
+<script src="javascript/consoleText.js"></script>
+<script src="javascript/click.js"></script>
+<script src="javascript/burger.js"></script>
+<script src="javascript/bgimagetext.js"></script>
+<script src="javascript/hoverovercolour.js"></script>
+<script src="javascript/cursor.js"></script>
